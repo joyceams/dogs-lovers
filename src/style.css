@@ -1,34 +1,80 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: aliceblue;
+body {
+    background-color: #04151F;
 }
 
-#root{
+/* NAVIGATION BAR*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Dosis';
+    background-color: #432534;
+    padding: 15px;
+}
+
+#filtering,
+#sorting {
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 5px;
+    color: #EFD6AC;
+    border: 2px solid #DBBEBD;
+    font-family: 'Dosis';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu #sorting:hover,
+#filtering:hover,
+.menu #filtering:focus,
+#sorting:focus {
+    color: #8F3400;
+    background: #432534;
+}
+
+/* MAIN */
+
+#root {
+    font-family: 'Dosis';
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.card{
+/* CARDS */
+
+.card {
     gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    color: #EFD6AC;
 }
 
-img{
+img {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 2px solid #DBBEBD;
     padding: 5px;
 }
- 
 
-
-
+h2 {
+    color: #EFD6AC;
+    border-radius: 15px;
+    border: 2px solid #DBBEBD;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
